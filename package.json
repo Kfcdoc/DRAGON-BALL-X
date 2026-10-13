@@ -3,13 +3,15 @@
   "version": "1.0.0",
   "description": "plantilla basada es ES",
   "license": "MIT",
-  "author": "Andrea",
+  "author": "Isay",
   "type": "module",
   "main": "index.js",
   "scripts": {
     "build": "webpack",
     "dev": "webpack serve --open",
-    "build2": "babel src -d controller --watch"
+    "build2": "babel src -d controller --watch",
+    "deploy": "npm run build && gh-pages -d dist"
+    
   },
   "devDependencies": {
     "@babel/cli": "^8.0.4",
